@@ -11,31 +11,31 @@ std::string problemSolution4(const std::string &macAddress) {
         return result;
     }
     switch (macAddress[1]) {
-        case 1:
+        case '1':
             result = "Multicast";
             break;
-        case 2:
+        case '2':
             result = "Unicast";
             break;
-        case 3:
+        case '3':
             result = "Multicast";
             break;
-        case 4:
+        case '4':
             result = "Unicast";
             break;
-        case 5:
+        case '5':
             result = "Multicast";
             break;
-        case 6:
+        case '6':
             result = "Unicast";
             break;
-        case 7:
+        case '7':
             result = "Multicast";
             break;
-        case 8:
+        case '8':
             result = "Unicast";
             break;
-        case 9:
+        case '9':
             result = "Multicast";
             break;
         case 'A':
