@@ -1,32 +1,16 @@
 float problemSolution1(float consumed_water) {
-    float fixed_amount = 13.0f;
-    float cost = fixed_amount;
-
-    if (consumed_water > 30.0f) {
-        cost += 30.0f * 0.4f;
-        consumed_water -= 30.0f;
-    } else {
-        cost += consumed_water * 0.4f;
-        return cost;
+    float cost;
+    // write your code here
+    if (consumed_water <= 30 ){
+        cost = 13 + consumed_water * 0.4;
+    } else if (consumed_water <= 50){
+        cost = 13 + 30 * 0.4 + (consumed_water - 30) * 0.12;
+    } else if (consumed_water <= 60){
+        cost = 13 + 30 * 0.4 + 20 * 0.12 + (consumed_water - 50) * 1.4;
+    } else{
+        cost = 13 + 30 * 0.4 + 20 * 0.12 + 10 * 1.4 + (consumed_water - 60) * 1.5;
     }
-
-    if (consumed_water > 20.0f) {
-        cost += 20.0f * 0.12f;
-        consumed_water -= 20.0f;
-    } else {
-        cost += consumed_water * 0.12f;
-        return cost;
-    }
-
-    if (consumed_water > 10.0f) {
-        cost += 10.0f * 1.4f;
-        consumed_water -= 10.0f;
-    } else {
-        cost += consumed_water * 1.4f;
-        return cost;
-    }
-
-    cost += consumed_water * 1.5f;
-
     return cost;
 }
+
+
