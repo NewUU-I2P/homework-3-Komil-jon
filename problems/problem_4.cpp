@@ -4,7 +4,6 @@
 std::string problemSolution4(const std::string &macAddress) {
     // write your code here
     std::string result;
-    int number;
     // make use of control flow statements
     if (macAddress[1] == 'F' and macAddress[0] == 'F'){
         result = "Broadcast";
