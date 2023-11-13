@@ -5,7 +5,7 @@ std::string problemSolution4(const std::string &macAddress) {
     // write your code here
     std::string result;
     // make use of control flow statements
-    if (macAddress[1] == 'F' and macAddress[0] == 'F'){
+    if (macAddress[0] == 'F' and macAddress[1] == 'F' and macAddress[3] == 'F' and macAddress[4] == 'F' and macAddress[6] == 'F' and macAddress[7] == 'F' and macAddress[9] == 'F' and macAddress[10] == 'F' and macAddress[12] == 'F' and macAddress[13] == 'F' and macAddress[15] == 'F' and macAddress[16] == 'F'){
         result = "Broadcast";
         return result;
     }
